@@ -224,23 +224,41 @@ footer{
 
 @media only screen and (max-width: 576px){
 
-
     nav{
         display: inline;
-        margin-left: 5px;
-        margin-right: 5px;
+        justify-content: center; 
+    }
+
+    .navigation {
+        padding-left: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .top-banner{
+        flex-direction: column-reverse;
     }
     .banner-left p{
         text-align: center;
-        margin-left: 90px;
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+
+    .laft-title h1{
+        text-align: center;
+        margin: 15px 43px;
+    }
+    .banner-left{
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     .banner-left h1 {
         font-size: 50px;
         text-align: center;
-        margin-left: 10px;
+        margin-left: 10px 10px;
     }
     .top-button {
         text-align: center;
+
     }
     .laft-title h1{
         font-size: 50px;
@@ -253,4 +271,31 @@ footer{
     }
     .top-banner, .gallery, .bottom-banner{
         grid-template-columns: 1fr;
-}
+    }
+    .top-title{
+        text-align: center;
+        margin: 15px 15px;
+    }
+    .banner-right img{
+       margin: 25 25px;
+    }
+    .logos img{
+        width: 16%;
+        margin-bottom: 20px;
+    }
+    .container {
+        margin-top: 50px;
+        text-align: center;
+    }
+    .container img{
+        margin-left: 40px;
+        align-items: center;
+    }
+    hr{
+        display: none;
+    }
+
+    }
+    /* -------------------
+        Mobile Devise
+    ---------------------*/
