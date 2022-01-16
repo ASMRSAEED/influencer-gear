@@ -23,52 +23,43 @@
 </head>
 
 <body>
-
-    <!------------
-      Navigation Bar 
-    -------------->
-    <header>
-
+    <header id="home">
         <nav class="container">
-            <div class="laft-title">
+            <div class="main-title">
                 <h1>Influencer products</h1>
             </div>
+            <input type="checkbox" id="nav-toggler">
+            <label class="nav-toggler-icon" for="nav-toggler">
+                <i class="card-icon fas fa-bars"></i>
+            </label>
             <ul class="navigation">
-                <li><a href="">Home</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Sign up</a></li>
-                <li><a href="">Log In</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Sign up">Sign up</a></li>
+                <li><a href="#Log In">Log In</a></li>
                 <li><a href=""></a><i class="fas fa-search"></i></li>
                 <li><a href=""></a><i class="fas fa-shopping-cart"></i></li>
             </ul>
         </nav>
 
-    </header>
-
-    <main>
-        <!------------
-      Top Part-1 
-    -------------->
         <section class="container">
-            <div class="top-banner">
+            <div class="banner">
                 <div class="banner-left">
-                    <h1>Start your Journey as<br>Influencer</h1>
-                    <p><b>A one-stop shop for Influencer gear and help you to<br>choose the right products.</b></p>
-                    <button class="top-button">SHOP NOW<i class="fas fa-arrow-right"></i></button>
+                    <h1>Start your Journey as Influencer</h1>
+                    <p>A one-stop shop for Influencer gear and help you to choose the right products.</p>
+                    <button class="primary-button">SHOP NOW<i class="fas fa-arrow-right"></i></button>
                 </div>
-                <div>
-                    <div class="banner-right"></div>
+                <div class="banner-right">
                     <img src="./images/main-camera.png" alt="">
                 </div>
             </div>
         </section>
 
-        <!------------
-      Top Part-2 
-    -------------->
-        <section class="container">
-            <div class="logos">
+        <section id="company-logo">
+            <div class="h-line">
                 <hr>
+            </div>
+            <div class="logos">
                 <img src="./logos/Alibaba.svg" alt="">
                 <img src="./logos/Amazon.svg" alt="">
                 <img src="./logos/Daraz.pk Logo.svg" alt="">
@@ -76,249 +67,253 @@
                 <img src="./logos/Rakuten.svg" alt="">
                 <img src="./logos/Walmart.svg" alt="">
                 <img src="./logos/Target.svg" alt="">
-                <hr>
+            </div>
+            <div>
+                <hr class="h-line">
             </div>
         </section>
+    </header>
 
-    <!------------
-     Gallery Start
-    -------------->
+    <main class="container">
+        <section id="gallery">
+            <div class="section-title">
+                <h2>Popular Collection</h2>
+            </div>
 
-        <section id="gallery-total">
-            <div>
-                <h2 class="top-title">Popular Collection</h2>
-                <div class="gallery">
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/tripod.png" alt="">
-
+            <div class="gallery">
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/tripod.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Flex Tripod</h3>
+                        <p class="product-price">$50.48</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Flex Tripod</h3>
-                            <p class="product-price">$50.48</p>
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/mic.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Microphone</h3>
+                        <p class="product-price">$120.25</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                    </article>
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/mic.png" alt="">
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Microphone</h3>
-                            <p class="product-price">$120.25</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/airpod.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Airbuds</h3>
+                        <p class="product-price">$100.00</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                    </article>
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/airpod.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/drone.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Drone</h3>
+                        <p class="product-price">$980.25</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Airbuds</h3>
-                            <p class="product-price">$100.00</p>
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/lights.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Light Setup</h3>
+                        <p class="product-price">$1200.00</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                    </article>
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/drone.png" alt="">
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Drone</h3>
-                            <p class="product-price">$980.25</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/setup.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Photoshoot Set</h3>
+                        <p class="product-price">$820.40</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                    </article>
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/lights.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/camera.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Vlogging Camera</h3>
+                        <p class="product-price">$1800.80</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Light Setup</h3>
-                            <p class="product-price">$1200.00</p>
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/single-light.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Green Screen</h3>
+                        <p class="product-price">$25.48</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                    </article>
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/setup.png" alt="">
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Photoshoot Set</h3>
-                            <p class="product-price">$820.40</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="photo">
+                        <img src="./images/action.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <h3 class="product-name">Action Camera</h3>
+                        <p class="product-price">$380.00</p>
+                    </div>
+                    <div class="rating-details">
+                        <div class="product-rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star empty"></i>
+                            <h4><span class="rating">4.00</span></h4>
                         </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
+                        <div class="product-details">
+                            <p>International Shipping Available<br>100% Money Back Guarantee</p>
                         </div>
-                    </article>
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/camera.png" alt="">
-                        </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Vlogging Camera</h3>
-                            <p class="product-price">$1800.80</p>
-                        </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/single-light.png" alt="">
-                        </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Green Screen</h3>
-                            <p class="product-price">$25.48</p>
-                        </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="image">
-                        <div class="thumbnail">
-                            <img src="./images/action.png" alt="">
-                        </div>
-                        <div class="name-price">
-                            <h3 class="product-name">Action Camera</h3>
-                            <p class="product-price">$380.00</p>
-                        </div>
-                        <div class="rating-details">
-                            <div class="product-rating">
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star filled"></i>
-                                <i class="fas fa-star empty"></i>
-                                <span class="rating-number">4.00</span>
-                                <p class="product-details"><b>International Shipping Available<br>100% Money Back
-                                        Guarantee</b></p>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
-        <br>
-        <ul class="button">
-            <li><a class="bottom-button" href="">See More<i class="fas fa-arrow-right"></i></a></li>
-        </ul>
-        <!------------
-      Gallery End
-    -------------->
-
-        <!------------
-      Bottom Part-2 
-    -------------->
-
+        <div>
+            <a class="bottom-button" href="">See More<i class="fas fa-arrow-right"></i></a>
+        </div>
         <section class="container">
-            <div class="bottom-banner">
-                <div>
-                    <div class="banner-left-2"></div>
+            <div class="banner">
+                <div class="banner-right">
                     <img src="./images/Mobile App.png" alt="">
                 </div>
-                <div class="banner-right-2">
-                    <h1><b>Simplify Your Shopping</b></h1>
-                    <p><b>Download Our App and Sign Up for Great Discount and Exclusive Coupon</b></p>
-                    <button class="top-button">DOWNLOAD NOW<i class="fas fa-arrow-right"></i></button>
+                <div class="banner-left">
+                    <h1>Simplify Your Shopping</h1>
+                    <p>Download Our Mobile App and Sign Up for Great Discount and Exclusive Coupon.</p>
+                    <button class="primary-button">DOWNLOAD NOW<i class="fas fa-arrow-down"></i></button>
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <span class="top-text">Influencer Products <br></span>
-        <span class="middle-text">Copyright © 2022 influencer products <br></span>
-        <span class="bottom-text">All rights reserved</span>
-        <div class="social-icon">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
-        </div>
 
+
+    </main>
+
+    <footer>
+        <div class="details">
+            <h3>Influencer Products</h3>
+            <h4>Copyright © 2022 influencer products</h4>
+            <h5>All rights reserved</h5>
+        </div>
+        <div class="social-icon">
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
     </footer>
+
 </body>
 
 </html>
